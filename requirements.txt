@@ -1,0 +1,30 @@
+# Web API
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Market data and TA indicators
+yfinance==0.2.37
+pandas==2.2.2
+pandas-ta==0.3.14b0
+numpy==1.26.4
+
+# Embedding and Vector Search
+sentence-transformers==2.7.0
+chromadb==0.4.24
+
+# OpenAI API (for strategy improvement generation)
+openai==1.34.0
+
+# PDF processing
+PyMuPDF==1.24.3   # fitz for PDF page parsing
+pdfminer.six==20221105
+
+# Utilities
+torch>=2.3,<3.0
+scikit-learn==1.5.0
+tqdm==4.66.4
+python-dotenv==1.0.1
+
+# Optional (for test + dev)
+pytest==8.2.2
+httpx==0.27.0
