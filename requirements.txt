@@ -4,9 +4,13 @@ uvicorn[standard]==0.29.0
 
 # Market data and TA indicators
 yfinance==0.2.37
+tenacity==8.2.3
 pandas==2.2.2
+pandas-datareader==0.10.0
 pandas-ta==0.3.14b0
 numpy==1.26.4
+requests-cache==1.2.0
+urllib3==2.2.2
 
 # Embedding and Vector Search
 sentence-transformers==2.7.0
@@ -24,6 +28,7 @@ torch>=2.3,<3.0
 scikit-learn==1.5.0
 tqdm==4.66.4
 python-dotenv==1.0.1
+pydantic-settings==2.4.0
 
 # Optional (for test + dev)
 pytest==8.2.2

@@ -1,0 +1,25 @@
+### Health
+GET http://localhost:8000/health
+
+### Analyze Strategy
+POST http://localhost:8000/analyze-strategy
+Content-Type: application/json
+
+{
+  "strategy": "Buy when RSI < 30 and MACD bullish crossover; exit at RSI > 60 or 1x ATR trailing stop",
+  "win_rate": 0.62,
+  "avg_return": 0.07,
+  "sample_stocks": ["AAPL", "MSFT"]
+}
+
+### Screen Stocks
+POST http://localhost:8000/screen-stocks
+Content-Type: application/json
+
+{
+  "criteria": {
+    "rsi_max": 40,
+    "macd_signal": "bullish_crossover",
+    "volume_increase": true
+  }
+}
